@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Portfolio</title>
+        <link rel="stylesheet" href="output.css"/>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    </head>
+    <!--contact me section and footer are made with tailwind on the html file!!-->
+<!--navigation menu -->
+    <body>
+        <!--scroll up arrow-->
+        <div class="fixed bottom-4 right-4 p-2 bg-blue-600 text-white text-lg rounded-md shadow-md">
+          <a href="#home">  <i class="fas fa-arrow-up"></i></a>
+        </div>
+        
+
+        <nav>
+            <div class="navbar">
+            <div class="logo"><a href="#">Portfolio </a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+    <!-- home section-->  
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="text">
+                    <div class="text-one">Hello</div>
+                    <div class="text-two">Im manolly kassabian</div>
+                    <div class="text-three">computer science</div>
+                    <div class="text-four">From Lebanon</div>
+                </div>
+                <div class="button">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </section>
+    <!-- about section-->
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title flex justify-center mb-10 ">
+                <span class="text-lg font-semibold relative">About Me</span>
+            </div>
+            
+            <div class="about-details">
+                <div class="right">
+                    <img src="images/about.png" alt="About Me Image">
+                </div>
+                <div class="left">
+                    <div class="topic">Coding Is My passion</div>
+                    <p>My passion for computer science stems from a deep curiosity about technology and its endless possibilities. From coding to designing algorithms, I find joy in solving complex problems and creating innovative solutions. With each project, I am driven by a desire to push boundaries, learn new concepts.</p>
+
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- my projects section-->
+    <section class="projects" id="projects">
+        <div class="content">
+            <div class="title flex justify-center mb-10 "><span class="text-lg font-semibold relative">My projects</span></div>
+
+        <div class="boxes">
+            <div class="box">
+                <div class="icons">
+                <i class="fas fa-desktop"></i>
+                </div>
+                 <div class="topic">Web development</div>
+                    <p> Web development involves building websites and web applications using languages like HTML, CSS, and JavaScript, along with frameworks like React and Angular. It focuses on creating user-friendly and functional digital experiences across different devices and platforms.</p>
+                </div>
+            <div class="box">
+                <div class="icons">
+                <i class="fas fa-desktop"></i>
+                </div>
+                    <div class="topic">backend development</div>
+                    <p> Backend development involves managing server-side logic, databases, and server configurations to power web applications. Developers use languages like Python, Node.js, or PHP to handle data processing and user authentication, ensuring robust and scalable applications.</p>
+                </div>
+            <div class="box">
+                <div class="icons">
+                <i class="fas fa-desktop"></i>
+                </div>
+                    <div class="topic">it services</div>
+                    <p>IT services cover a wide range of technology-related offerings, including software development, network management, cybersecurity, cloud computing, data analytics, IT consulting, and technical support. Service providers offer expertise to help businesses optimize their technology infrastructure and achieve their goals.</p>
+                </div>
+            <div class="box">
+                <div class="icons">
+                <i class="fas fa-desktop"></i>
+                </div>
+                    <div class="topic">E-comerce</div>
+                    <p> E-commerce websites facilitate online buying and selling. They enable browsing, shopping cart management, secure transactions, and often include features like product catalogs and customer reviews. E-commerce plays a crucial role in modern retail, providing businesses with global reach and operational efficiency.</p>
+                </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- contact me-->
+    <section class="contact bg-blue-50" id="contact">
+        <div class="content w-85 mx-auto mt-40 font-poppins">
+            <div class="title flex justify-center mb-10">
+                <span class="text-lg font-semibold relative">Contact Me</span>
+                <span class="absolute left-0 bottom-0 h-3 w-full bg-blue-600"></span>
+            </div>
+            <div class="text text-center w-80 mx-auto">
+                <div class="topic">Have any project</div>
+                <p>Contact me on my email: Manollikassabian3@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer-->
+    <footer class="bg-blue-600">
+        <div class="text-center text-white py-4">
+            <span class="text-white text-base font-semibold">Created by manolly kassabian|2024 All rights reserved</span>
+        </div>
+    </footer> 
+    
+    <script src="script.js"></script>
+    </body>
+    
+</html>

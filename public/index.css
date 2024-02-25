@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* navigation menu */
+nav{
+    position: fixed;
+    margin: auto;
+    width:100%;
+    padding: 20px 0;
+    font-family:'Ubuntu' , sans-serif;
+    transition: all 0.4s ease;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, blue, 0.15); 
+}
+
+nav.sticky{
+    padding: 13px 0;
+    background: #4070F4;
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight:500;
+    color:#4070F4;
+}
+nav.sticky .navbar .logo a{
+    color: white;
+}
+nav .navbar .menu{
+  display: flex;  
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;    
+}
+.navbar .menu li a{
+    font-size: 18px;
+    font-size: 500;
+    color:#0E2431;
+    transition: all 0.3s ease ;
+}
+.navbar .menu li a:hover{
+    color:#4070F4;
+}
+nav.sticky .navbar .menu li a{
+    color: white;
+}
+nav.sticky .navbar .menu li a:hover{
+    color:#0E2431 ;
+}
+
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070F4;
+}
+nav.sticky .navbar .media-icons a{
+    color: white;
+}
+/*side navbar*/
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;  
+    display: none;
+
+}
+nav .menu-btn{
+    color: #f44064;
+
+}
+/*home section */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("images/background.jpg") no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Ubuntu' , sans-serif;
+}
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text .text-one{
+    font-size: 25px;
+}
+.home .text .text-two{
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text .text-three{
+    font-size: 40px;
+}
+.home .text .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+}
+.home .button{
+    font-size: 23px;
+    margin: 5px 0;
+}
+.home .button button{
+    outline:none ;
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: #4070F4;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+.home .button button:hover{
+    color:#4070F4;
+    background-color: white;
+    border-color: #4070F4;
+}
+/*about me section*/
+.about{
+    padding-top: 50px;
+}
+.about .content{
+   width: 85%;
+   margin: 40px auto;
+   font-family:'poppins',sans-serif ;
+
+}
+/* .about .title{ */
+    /* display: flex; */
+    /* justify-content: center; */
+/*  */
+/* } */
+/* .about .title span{ */
+    /* font-size: 30px; */
+    /* font-weight: 600; */
+    /* padding-bottom: 8px; */
+/* } */
+.about .title span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #4070F4;
+}
+
+.about .about-details {
+    display: flex;
+    justify-content:space-between ;
+}
+.about .content .about-details .right{
+    width:45% ;
+}
+.about .about-details .right img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .content .about-details .left{
+    width: 55%;
+}
+.about-details .left .topic{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .left p{
+    text-align: justify;
+}
+/* my projects*/
+.projects{
+    padding-top: 50px;
+}
+.projects .content{
+    width: 85%;
+    margin: 40px auto;
+    font-family:'poppins',sans-serif ;
+}
+.projects .title span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background:#4070F4;
+}
+.projects .boxes{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.projects .boxes .box{
+    width: calc(100% / 2 -20px);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.15 );
+    text-align: center;
+    padding:20px 10px;
+    transition: all 0.4s ease;
+
+}
+.projects .boxes .box .icons{
+    height: 50px;
+    width: 50px;
+    color: white;
+    background:#4070F4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin:0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.projects .boxes .box:hover .icons{
+    background: white;
+    color: #4070F4;
+}
+.projects .boxes .box:hover{
+    background: #4070F4;
+    color: white;
+}
+/*contact me section and footer are made with tailwind on the html file!!*/
+
+
+/* media query*/
+@media (max-width: 1190px){
+    .abou .content{
+        width: 90%;
+    }
+}
+@media (max-width: 1090px){
+    .about .about-details{
+        flex-direction: column;
+    }
+    .projects .boxes .box{
+        width: calc(100% / 2 -20px);
+    }
+}
+@media (max-width: 971px){
+    .about .about-details .right img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 750px){
+    nav .navbar .menu{
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 250px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+    nav .navbar.active .menu{
+        left: 0;
+    }
+    .navbar .menu li a{
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: white;
+    }
+    .navbar .media-icons{
+        display: none;
+    }
+    nav .menu-btn,
+    .navbar .cancel-btn{
+        display: block;
+    }
+    .home .text .text-two{
+     font-size: 55px;
+    }
+    .home .text .text-three{
+        font-size: 30px;
+    }
+}
+@media (max-width: 510px){
+    .home .text .text-two{
+        font-size: 50px;
+    }
+    .home .text .text-three{
+        font-size: 25px;
+    }
+}
+
+  
